@@ -221,13 +221,11 @@ def exec_write_class_data():
         arm_loop(save_csv=True, writer=writer)
 
 def main():
-    opt = input("Menu :\n 1-Gesture recognition control\n2-fill train data\n3-Full motion control\n")
+    opt = input("Menu :\n 1-Gesture recognition control\n2-fill train data\n")
     if opt == '1':
         arm_loop_infer()
     elif opt == '2':
         exec_write_class_data()
-    elif opt == '3':
-        exec_puppet(False)
     else: main()
 
 
